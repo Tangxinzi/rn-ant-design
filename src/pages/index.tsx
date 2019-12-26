@@ -1,18 +1,19 @@
 import React from 'react';
 import styles from './index.css';
+import { Typography } from 'antd';
 import { formatMessage } from 'umi-plugin-locale';
+
+const { Title, Paragraph, Text } = Typography;
+
 export default function() {
   return (
     <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            {formatMessage({ id: 'index.start' })}
-          </a>
-        </li>
-      </ul>
+      <Typography>
+        <Title level={3}>hello ~</Title>
+        <Paragraph>
+          This is an <Text mark>Ant Design of React</Text> project.
+        </Paragraph>
+      </Typography>
     </div>
   );
 }

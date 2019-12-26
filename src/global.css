@@ -5,3 +5,7 @@ html, body, #root {
 body {
   margin: 0;
 }
+
+.ant-menu-inline {
+  border-right: none !important;
+}
