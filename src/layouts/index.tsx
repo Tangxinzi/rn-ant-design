@@ -33,6 +33,30 @@ const BasicLayout: React.FC = props => {
             </Menu.Item>
           </SubMenu>
         </Menu>
+        <Menu mode="inline">
+          <SubMenu title={
+            <span>
+              <span>导航</span>
+            </span>
+          }>
+            <Menu.Item>
+              <span>Affix 固钉</span>
+              <Link to="/affix/index">Affix 固钉</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <span>Breadcrumb 面包屑</span>
+              <Link to="/breadcrumb/index">Breadcrumb 面包屑</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <span>PageHeader 页头</span>
+              <Link to="/page-header/index">PageHeader 页头</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <span>Steps 步骤条</span>
+              <Link to="/steps/index">Steps 步骤条</Link>
+            </Menu.Item>
+          </SubMenu>
+        </Menu>
       </Sider>
       <Layout>
         <Header className={styles.header}>

@@ -20,6 +20,22 @@ const config: IConfig = {
           component: './typography/index',
         },
         {
+          path: '/affix/index',
+          component: './affix/index',
+        },
+        {
+          path: '/breadcrumb/index',
+          component: './breadcrumb/index',
+        },
+        {
+          path: '/page-header/index',
+          component: './page-header/index',
+        },
+        {
+          path: '/steps/index',
+          component: './steps/index',
+        },
+        {
           path: '/',
           component: '../pages/index',
         },
